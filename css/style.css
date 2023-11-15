@@ -1,0 +1,364 @@
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+    
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+}
+
+/* imagenes de fondo */
+.container-portada{
+    background-color: aqua;
+    height: 400px;
+    
+    background-image: url("../img/fondo.jpg");
+    
+    /* repeticion de la imagen */
+    background-repeat: no-repeat;
+    background-position: center;
+/* tamaño de la imagen
+tamaño con pixeles: 600px | horizontal x
+cover: el tamaño de la imagen se ajusta al contenedor
+contain: el tamaño se ajusta completa */
+background-size:cover;
+background-attachment: fixed;
+/* attachment hace que baje la imagen */
+}
+
+    /* ---Container--- */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+/*----header----*/
+.header-wrapper{
+    background-color:#c6afc6;
+}
+header {
+    background-color:#c6afc6;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+nav ul li a {
+    color:#130d1f;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*----portada-index---*/
+.samsung {
+    background-color:aliceblue;
+    height: 32vh;
+    /* background-image: ; */
+    background: position scroll;
+    background-size: cover;
+
+    .portada{
+    padding: 3rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+   .portada-title {
+    font-size: 3rem;
+    text-align: center;
+   }
+   .portada-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+}
+
+h1 {
+    color: #663366
+    background-color#c6afc6 
+}
+
+article {
+    background-color:#c6afc6;
+}
+
+section article {
+    background-color: antiquewhite;
+}
+
+/* Selector descendente */
+
+
+h3 {
+    color: antiquewhite;
+}
+
+
+.titulo-ingeniero {
+    color: rgb(0, 0, 0);
+}
+
+h1.titulo.algo {
+    color: beige;
+}
+
+p {
+    color: #10091d;
+    background-color: #d9d8d9;
+}
+.titulo-comprar {
+    color:aliceblue
+}
+/* boton */
+.btn {
+    background-color: #663366;
+}
+/* este es un titulo por id 
+#titulo {
+    color: yellow
+}
+/* selector multiple */
+/*
+h1,h2 la coma significa que ambos tendrian el mismo color osea backgroundcolor
+ */
+
+ p{
+    color: rgb(38, 70, 55);
+ }
+ .parrafo{
+    color:rgb(24, 51, 36)
+ }
+
+/* especificamente queda el class osea el verde xq esta escrinto en el index
+
+etiqueta !important; exclusivamente necesario, sobrepasa cualquier otra etiqueta para q se vea css*/
+
+
+    /* ancho y alto box modeling */
+    .caja{
+        background-color: #9b88be;
+        width: 200px;
+    height: 600px;
+    display:inline-block;
+    
+    min-width: 50;
+    max-width: 10;
+    
+    min-height: 100px;
+    max-height: none;
+    
+    /* ---overflow--- navegar el box */
+
+    
+    /* --bordes-- */
+    border-color: #10091d solid 10px;
+    
+    /* propiedad padding
+    1 valor - todos los lados
+    2 valores vertical Y | Horizontal X
+    3 valores arrina | horizontal | abajo */
+    padding-top: 20px;
+    
+    /* margin, margen entre la caja y la pagina */
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    /* --Centrar elemento en bloque--
+
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* --Display-- sirve para modificar el corportamiento de los elementos.
+    block---> Elemento en bloque
+    inline--> Elemento en linea */
+    }
+
+.caja-2 {
+    .caja-2{
+        background-color: #9b88be;
+        width: 200px;
+    height: 600px;
+    display:inline-block;
+    
+    min-width: 20;
+    max-width: 10;
+    
+    min-height: 100px;
+    max-height: none;
+    border-color: #10091d solid 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+nav ul li a {
+    color:#130d1f;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+}
+
+
+/* ------Unidades de medida para tipografias----- */
+/* 
+El EM: relativo al font size del elemento padre.
+El REM: es relativo al font-size del elemento raiz (HTML) valor base=16px.
+*/
+
+/* .contenedor-padre{ 
+    font-size:20px;
+}*/
+html{
+    font-size: 16px;
+}
+
+.parrafo{
+    font-size: 1rem;
+}
+
+/* -----Unidades de medida para elementos */
+
+
+.flex-container{
+    background-color: #663366;
+    height: 50vh;
+    display:flex;
+
+/* ---Direccion de los elementos---
+row---> fila | Horizontal
+column---> Columna | vertical 
+*/
+flex-direction: column;
+
+/* ---Multilinea--- */
+flex-wrap: wrap;
+
+/* ----Flow---- 
+flex-flow: column;*/
+
+/* --Distribucion de elementos-- */
+justify-content:space-evenly;
+
+
+}
+
+.caja-3{
+    background-color: #10091d;
+}
+
+
+/* --- Contacto ---- */
+
+.container-contacto{
+    background-color: #9b88be;
+  }
+
+
+.contacto {
+    padding: 3rem 1rem;
+  }
+  
+  
+   .inicio-contacto {
+    background-color: aqua;
+    height: 400px;
+    
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: none;
+    background-size:cover;
+    background-attachment: fixed;
+   }
+  
+  
+  .contacto h2 {
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .form-contacto {
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    padding: 1rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .form-button {
+    background-color: black;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;
+    border: 0;
+  }
+  
+    .contacto img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .cont-contacto {
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      border-radius: 10px;
+      overflow: hidden;
+  
+      max-width: 900px;
+  
+      box-shadow: 0px 3px 10px;
+    }
+  
+    .form-contacto {
+      border-radius: 0;
+      box-shadow: 0px 0px 0px;
+  
+      align-items: start;
+    }
+  
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.5rem;
+    }
+  
